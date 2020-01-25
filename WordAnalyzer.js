@@ -1,3 +1,4 @@
+// \u0303 = ̃ 
 function createWord(begin) {
     var newWord = begin;
 
@@ -79,38 +80,38 @@ function addChar(newWord, lastTwoChars) {
 
 function hasConsone(lastTwoChars) {
     return lastTwoChars.includes("l") ||
-            lastTwoChars.includes("b") ||
-            lastTwoChars.includes("p") ||
-            lastTwoChars.includes("m") ||
-            lastTwoChars.includes("d") ||
-            lastTwoChars.includes("t") ||
-            lastTwoChars.includes("n") ||
-            lastTwoChars.includes("v") ||
-            lastTwoChars.includes("f") ||
-            lastTwoChars.includes("g") ||
-            lastTwoChars.includes("k") ||
-            lastTwoChars.includes("z") ||
-            lastTwoChars.includes("s") ||
-            lastTwoChars.includes("\u03b8") ||
-            lastTwoChars.includes("\u00f0") ||
-            lastTwoChars.includes("\u0281") ||
-            lastTwoChars.includes("\u03c7") ||
-            lastTwoChars.includes("\u0292") ||
-            lastTwoChars.includes("\u0283");
+        lastTwoChars.includes("b") ||
+        lastTwoChars.includes("p") ||
+        lastTwoChars.includes("m") ||
+        lastTwoChars.includes("d") ||
+        lastTwoChars.includes("t") ||
+        lastTwoChars.includes("n") ||
+        lastTwoChars.includes("v") ||
+        lastTwoChars.includes("f") ||
+        lastTwoChars.includes("g") ||
+        lastTwoChars.includes("k") ||
+        lastTwoChars.includes("z") ||
+        lastTwoChars.includes("s") ||
+        lastTwoChars.includes("ʁ") ||
+        lastTwoChars.includes("χ") ||
+        lastTwoChars.includes("ʃ") ||
+        lastTwoChars.includes("ʒ") ||
+        lastTwoChars.includes("ð") ||
+        lastTwoChars.includes("θ");
 }
 
 function hasVowel(lastTwoChars) {
     return lastTwoChars.includes("a") ||
-        lastTwoChars.includes("\u0251\u0303") ||
+        lastTwoChars.includes("ɑ̃") ||
         lastTwoChars.includes("e") ||
         lastTwoChars.includes("i") ||
-        lastTwoChars.includes("\u025b") ||
-        lastTwoChars.includes("\u025b\u0303") ||
+        lastTwoChars.includes("ø") ||
+        lastTwoChars.includes("ɛ") ||
+        lastTwoChars.includes("ɛ̃") ||
         lastTwoChars.includes("o") ||
         lastTwoChars.includes("u") ||
         lastTwoChars.includes("y") ||
-        lastTwoChars.includes("\u0254\u0303") ||
-        lastTwoChars.includes("\u00f8");
+        lastTwoChars.includes("ɔ̃");
 }
 
 function endOfWord(character) {
