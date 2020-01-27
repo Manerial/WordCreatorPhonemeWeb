@@ -2,26 +2,43 @@
 <header>
     <meta charset="UTF-8">
     <title>Word Creator Phoneme</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="WordAnalyzer.js"></script>
-    <script src="analysis.js"></script>
-    <script src="script.js"></script>
-    <style>
-        div * {
-            display: inline-block;
-        }
-        p {
-            margin:2px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="WordAnalyzer.js"></script>
+    <script type="text/javascript" src="analysis.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </header>
+
 <body>
-    <div>
-        <label for="wordNumber">Number of words :</label>
-        <input type="number" min="1" id="wordNumber"></input>
-        <button>New word list</button>
+    <div class="container">
+        <h1>Word creator using phonemes</h1>
+        <div class="form-group">
+            <label for="wordNumber" class="form-check-label">Choose a number of words to create:</label>
+            <input id="wordNumber" type="number" min="1" max="2000" class="form-control w-25"></input>
+        </div>
+        <div class="form-group">
+            <p id="createList" class="btn btn-primary">New word list</p id="wordNumber">
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>List with phonemes</h2>
+                <ul id="wordList" class="list-group">
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h2>List without phonemes</h2>
+                <ul id="wordList2" class="list-group">
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id="wordList">
-        
-    </div>
+    <footer class="footer">
+        <div class="container">See more tools there:
+            <a href="https://github.com/Manerial"> https://github.com/Manerial</a>
+        </div>
+    </footer>
 </body>
